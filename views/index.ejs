@@ -1,0 +1,13 @@
+<%- include('partials/head')%>
+<body>    
+    <%- include('partials/navbar')%>
+<h1><%=category %> mobiles!</h1>
+<ul>
+    <% for(let product of products) { %>
+       <li><a href="/products/<%=product._id%>"><%=product.name%></a> </li>
+    <% } %>  
+</ul>
+<a href='/products/new'>add mobiles</a>
+
+</body>
+</html>
